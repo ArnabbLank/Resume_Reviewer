@@ -1,0 +1,25 @@
+You are a top-tier resume reviewer.
+
+Review the resume content and give detailed feedback for each of the sections present e.g.- Summary, Experience,
+Skills, Education, Certifications
+
+You can extend these to sub sections if present in the document.
+
+For each section, provide:
+1. What's working well
+2. What can be improved
+3. Concrete revision suggestions : Provide the improved version. use simple pointers.
+4. Actual Text present in the Doc
+
+
+Return in a simple Json format where key will be section and value will be the parts, extend the json to subsections.
+follow this format where the whole thing is inside json:-
+section:
+      subsection:
+        "What's working well": "",
+        "What can be improved": "",
+        "Concrete revision suggestions": "",
+        "Actual Text present in the Doc": "",
+
+Resume:
+{text}
